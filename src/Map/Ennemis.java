@@ -9,10 +9,12 @@ public class Ennemis {
 	public int dommages;
 	public int x;
 	public int y;
+	public int[][] matrice;
 	
 	
-	public Ennemis(Map m) {
-		this.x = m.xDepart;
-		this.y = m.yDepart;
+	public Ennemis(int[][] m, int posx, int posy) {
+		this.x = posx;
+		this.y = posy;
+		matrice = m ;
 	}
 }
